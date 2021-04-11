@@ -1,0 +1,254 @@
+body{
+	font-family: 'Pangolin', cursive;
+	background: linear-gradient(#fefefe, #888888);
+}
+/*Página principal */
+img {
+	max-width: 350px;
+	max-height:350px;
+}
+
+header {
+	background: #6495ED;
+	padding: 10px 0;
+}
+
+.caixa{
+	position: relative;
+	width: 1240px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+
+.titulo-centralizado {
+	text-align: center;	
+	padding: 2em 0;
+}
+
+p {
+	text-align: center;	
+}
+
+.itens-beneficio{
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	margin-right: 15%;
+	font-size: 18px;
+
+}
+
+.itens:before{
+	content:"★";
+}
+
+.itens{
+	line-height: 1.5;
+	list-style:none;
+}
+
+.imagem-beneficio{
+	width: 50%;
+	box-shadow: 10px 10px 10px #000000;
+}
+
+/*Mapa*/
+.titulo-principal{
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+	padding: 1em 0;
+}
+
+.mapa-conteudo{
+	width: 940px;
+	margin: auto;
+	padding: 1em 0;
+
+}
+
+footer {
+	text-align: center;
+	padding: 40px 0;
+	background:  #6495ED;
+
+
+}
+/*Página Serviços*/
+
+.servicos{
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.servicos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.0%;
+	padding: 20px 10px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius:10px;
+}
+
+.servicos li:hover {
+	border-color: #cc78c1;
+
+}
+
+.servicos li:active{
+	border-color: #cc78c1;
+}
+
+.servicos li:hover h2 {
+	font-size: 25px;
+}
+
+.servicos h2 {
+	font-size: 22px;
+	font-weight:bold;
+}
+
+.servicos-preco{
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.servicos img{
+	width: 80%;
+}
+
+/*Página de contato*/
+
+main {
+	padding: 0px 50px;
+}
+
+form {
+	margin: 50px 0;
+} 
+
+form label, form legend, form p{
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.horario{
+	text-align: left;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox{
+	margin: 20px 0;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bolder;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.2);
+}
+
+table {
+	margin: 20px 0 40px;
+}
+
+thead{
+	background: #555555;
+	color: white;
+	font-weight: bolder;
+}
+
+td, th{
+	border: 1px solid #000000;
+	padding: 8px 15px;
+	
+}
+
+/*Responsividade*/
+
+@media screen and (max-width: 480px) {
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos, main, .servicos{
+		width: auto;
+	}
+
+	h1, ul {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.lista-beneficios, .imagem-beneficios, .imagem-beneficio, .itens-beneficio{
+		width: 100%
+	}
+
+	.servicos h2{
+		font-size: 16px;
+	}
+ 	.servicos li:hover h2 {
+	font-size: 20px;
+	}
+
+	.servicos li:active{
+	border-color: #cc78c1;
+	}
+
+	.servicos li:hover {
+	border-color: #cc78c1;
+
+	}
+
+	.servicos li{
+		width: 50%;
+	}
+
+
+}
